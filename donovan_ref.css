@@ -1,0 +1,428 @@
+:root{
+    --body-bg-image: url('https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif');
+    --content: #43256E;
+    --border-color1: #11bbba;
+    --bg-color: #2a2824;
+    --border-color2: #3c443c;
+    --shadow-color1: #d7d7d7;
+    --shadow-color2: #00FFFF99;
+    --title-color: #0b0e0b;
+    --tr-color: #3F403F;
+    --accentbox-color: #C1C4C1;
+    --innerbox-color2: #DADEDA;
+    --coolbox-gradient: linear-gradient(transparent 70%, #00FFFF99 5%, #7bcbcb 100%);
+    --second-gradient: linear-gradient(transparent 70%, #234444 5%, #88dbdb 100%);
+    --primary-font: Octosquares;
+    --secondary-font: MidnightLetters;
+}
+
+@font-face{
+    font-family: Octosquares;
+    src: url('/font/TT\ Octosquares\ Trial\ Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: MidnightLetters;
+    src: url('/font/MidnightLetters-Regular.ttf') format("truetype");
+}
+
+body {
+    background-image: var(--body-bg-image);
+    background-size: 55px;
+    background-attachment: fixed;
+    font-family: var(--primary-font);
+    margin: 0;
+    background-position:center;
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color1) var(--bg-color);
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth638.cur), auto !important;
+}
+
+::selection {
+    background: #eba7bb;
+    color: white;
+}
+
+#container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+a {
+    color: #476FAC;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+b {
+    text-shadow: 1px 1px var(--shadow-color1), -1px -1px var(--border-color1);
+    font-family: var(--secondary-font);
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+h1{
+    text-shadow: 2px 1px var(--shadow-color1), -1px -1px var(--shadow-color2);
+    font-family: var(--primary-font);
+    color: var(--title-color);
+    font-size: 23px;
+}
+
+h2{
+    text-shadow: 2px 1px var(--shadow-color1), -1px -1px var(--shadow-color2);
+    font-family: var(--primary-font);
+    color: var(--title-color);
+    font-size: 23px;
+    text-align: center;
+}
+
+h3{
+    text-shadow: 1px 1px var(--shadow-color1), -1px -1px var(--shadow-color2);
+    font-family: var(--primary-font);
+    color: var(--title-color);
+    line-height: 20px;
+    font-weight: 100;
+    font-size: 23px;
+    margin: 5px;
+    background: var(--coolbox-gradient);
+    border-radius: 10px;
+}
+
+p{
+    
+    font-family: var(--secondary-font);
+    color: var(--innerbox-color2);
+    font-weight: 11%;
+    font-size: 16px;
+}
+
+h4 a, h5 a {
+    color: #000000;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #E53F71;
+}
+
+
+#header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: #d4d4d4;
+    height: 150px;
+    font-family: var(--primary-font);
+}
+
+main {
+
+    padding: 20px 20px 20px 80px;
+    text-align: justify;
+}
+
+h1{
+    text-align: left;
+    width: 100%;
+}
+
+h4 {
+    text-align: left;
+    font-size: 19px;
+    margin: 0px;
+    width: 100%;
+}
+
+hr {
+    border-top: 1px dotted var(--border-color2);
+    border-bottom: 1px dotted var(--border-color1);
+}
+
+span{
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.second-box{
+    box-shadow: 1px 1px var(--border-color1), -1px -1px var(--border-color2);
+    background-color: var(--bg-color);
+    border: 2px dotted var(--border-color1);
+    border-radius: 1.3rem;
+    text-align: center;
+    margin: 10px 0px;
+    overflow: hidden;
+    padding: 20px;
+    height: 100%;
+}
+
+.ScrollBoxGroup {
+    width: 95%;
+    border-spacing: 5px;
+}
+
+.scrollbox {
+    box-shadow: 2px 2px var(--shadow-color1), -2px -2px var(--shadow-color2);
+    background: var(--accentbox-color);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    overflow: auto;
+    padding: 7px;
+    width: 30%;
+}
+
+.imgframe {
+    box-shadow: 1px 1px var(--shadow-color1), -1px -1px var(--shadow-color2);
+    border-radius: 5px;
+}
+
+.cooltext {
+    background: var(--coolbox-gradient);
+    border-radius: 10px;
+}
+
+.second_cooltext{
+    background: var(--second-gradient);
+    border-radius: 10px;
+}
+
+.imagehere {
+    height: 150px;
+    width: 150px;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.charactermain-image {
+    box-shadow: 1px 1px var(--border-color1), -1px -1px var(--border-color2);
+    background-color: var(--innerbox-color2);
+    border: 2px dotted var(--border-color1);
+    border-radius: 1.3rem;
+    height: 350px;
+    width: 300px;
+    margin-left:auto;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    padding: 20px;
+}
+
+.hueshift {
+    filter: var(--decorhue);
+}
+
+h2 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+/* Thanks to LetoLeGaosaure on Pillowfort for pointing this out! */
+h1 a:hover, h2 a:hover, h4 a:hover, h5 a:hover {
+    color: inherit;
+} 
+/* -------- */
+
+/*.profile{
+    width: 576px;
+    height: 768px;
+}*/
+
+.box {
+    background-color: #E7E9EB;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 20%;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    justify-content: flex-start; /* Center the columns horizontally */
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+figcaption {
+    font-style: var(--primary-font);
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+}
+
+#toc {
+    float: left;
+    text-align:left;
+    width: 200px;
+    margin-right:auto;
+    margin: 0px 40px 10px 0px;
+    background-color: #E7E9EB;
+    border: 1px solid #000000;
+}
+
+ol {
+    padding-left: 8%;
+    list-style-type: circle;
+    }
+
+li {
+    padding-bottom: 3px;
+    }
+
+.characterprofile {
+  float: right;
+  width: 300px;
+  margin-left:auto;
+  margin: 0px 0px 30px 30px;
+  background-color: #808080;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: #808080;
+    overflow: hidden;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+td { 
+    vertical-align: top; 
+    padding: 3px; 
+    text-align: center;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+th {
+  text-align: center;
+  padding: 3px 10px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+td:nth-child(odd) {
+  font-weight: 600;
+    text-align: right;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--accentbox-color);
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1350px) {
+main {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0px 0px 00px;
+    padding: 0px;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+table, .characterprofile {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 00px;
+}
+    
+.characterprofile {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+}
+    
+main {
+    padding: 20px;
+}
+    
+.charactermain-image {
+    width: 100%;
+    margin: 0px 0px 10px 00px;
+}
+
+}
